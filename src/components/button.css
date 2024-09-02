@@ -1,4 +1,13 @@
 .button{
-    background-color: green;
-    display: flex;
+    background-color: rgba(2, 82, 2, 0.699);
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    font-weight: 600;
+}
+.button:hover{
+    background-color: rgba(2, 82, 2, 0.521);
+    cursor: pointer;
 }

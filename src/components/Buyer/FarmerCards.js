@@ -1,4 +1,5 @@
 import FarmerCard from "./FarmerCard"
+import './FarmerCards.css'
 
 const farmers = [
     {
@@ -8,7 +9,7 @@ const farmers = [
         location: "Maharashtra",
         crops: ["Wheat", "Sugarcane", "Soybean"],
         farm_size_acres: 10,
-        picture_url: "https://example.com/images/ravi_kumar.jpg"
+        picture_url: '/farmer.png'
     },
     {
         id: 2,
@@ -17,7 +18,7 @@ const farmers = [
         location: "Punjab",
         crops: ["Rice", "Wheat", "Mustard"],
         farm_size_acres: 15,
-        picture_url: "https://example.com/images/sita_devi.jpg"
+        picture_url: '/farmer.png'
     },
     {
         id: 3,
@@ -26,7 +27,7 @@ const farmers = [
         location: "Uttar Pradesh",
         crops: ["Potato", "Tomato", "Onion"],
         farm_size_acres: 8,
-        picture_url: "https://example.com/images/ram_singh.jpg"
+        picture_url: '/farmer.png'
     },
     {
         id: 4,
@@ -35,7 +36,7 @@ const farmers = [
         location: "Gujarat",
         crops: ["Cotton", "Groundnut", "Bajra"],
         farm_size_acres: 12,
-        picture_url: "https://example.com/images/lakshmi_patel.jpg"
+        picture_url: '/farmer.png'
     },
     {
         id: 5,
@@ -44,14 +45,23 @@ const farmers = [
         location: "Rajasthan",
         crops: ["Wheat", "Barley", "Gram"],
         farm_size_acres: 20,
-        picture_url: "https://example.com/images/hari_prasad.jpg"
+        picture_url: '/farmer.png'
+    },
+    {
+        id: 6,
+        name: "Palak Devi",
+        age: 48,
+        location: "Punjab",
+        crops: ["Wheat", "Mustard"],
+        farm_size_acres: 25,
+        picture_url: '/farmer.png'
     }
 ]
 
 function FarmerCards() {
   return (
-    <ul>
-        {farmers.map((farmer) => <FarmerCard 
+    <ul className="farmerList">
+        {farmers.map((farmer) => <FarmerCard
             key={farmer.id}
             name={farmer.name}
             age={farmer.age}

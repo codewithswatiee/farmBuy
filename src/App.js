@@ -1,7 +1,9 @@
+import FarmerCards from "./components/Buyer/FarmerCards";
+
 function App() {
   return (
     <div>
-      Hie
+      <FarmerCards />
     </div>
   );
 }
