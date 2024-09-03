@@ -1,9 +1,10 @@
-import FarmerCards from "./components/Buyer/FarmerCards";
+// import FarmerCards from "./components/Buyer/FarmerCards";
+import ProductsCards from "./components/Buyer/ProductsCards";
 
 function App() {
   return (
     <div>
-      <FarmerCards />
+      <ProductsCards />
     </div>
   );
 }
