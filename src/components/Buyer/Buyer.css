@@ -1,0 +1,16 @@
+.navBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+.navBtns button{
+    border: none;
+    text-align: center;
+    font-size: large;
+    background-color: rgba(0, 128, 0, 0.284);
+    padding: 15px 19px;
+    color: white;
+    border-radius: 4px;
+}
