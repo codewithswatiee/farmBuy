@@ -87,7 +87,8 @@ function ProductsCards() {
         price={product.price}
         category={product.category}
         unit={product.unit}
-        pictureUrl={product.image}
+        imgUrl={product.image}
+        stock={product.availability}
     />
     )}
 </ul>
