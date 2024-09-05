@@ -1,30 +1,19 @@
 import React from 'react'
-import Button from '../Button'
 import './Product.css'
 
-function Product({name, category, price, stock, imgUrl}) {
-    let stockClass = ''
-    if(stock === "Out of Stock" ){
-        stockClass = 'outOfStock'
-    } else if(stock === 'Limited Stock'){
-        stockClass = 'limited'
-    } else{
-        stockClass = 'available'
-    }
+function Product({farm, name, unit, price, stock,description, imgUrl}) {
   return (
-    <div>
-      <div className='product'>
-      <img src={imgUrl} alt="Product" />
-      <div className='info'>
-        <h2>Name: {name}</h2>
-        <h2>Category: {category}</h2>
-        <h2>Price: ₹{price}</h2>
-        <h2>Availability: <span className={stockClass}>{stock}</span></h2>
+    <div className='product-card'>
+      <img src='/products.png'></img>
+      <h3 className={stock ==='Limited' && 'marginB'}>{name}</h3>
+      <p>{description}</p>
+      <div className="product-details">
+        <span className="product-price">₹{price} /{unit}</span>
+        <span className="product-farm">{farm}</span>
       </div>
-      {stock==="Out of Stock" ? <Button className='button out'>Sold Out</Button> : <Button className='button'>Buy</Button>}
+      {stock ==='Limited' && <p style={{color:'red', fontWeight:500}}>Limited</p>}
+      <button className={stock==="Out of Stock"? 'btn out strikethrough' : 'btn'} data-text='Sold Out'>Add to Cart</button>
     </div>
-    </div>
-  )
-}
+  )}
 
 export default Product

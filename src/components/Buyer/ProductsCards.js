@@ -4,8 +4,9 @@ import './ProductsCard.css'
 const products = [
   {
     id: 1,
-    name: "Tomatoes",
-    category: "Vegetables",
+    name: "Organic Apples",
+    description: "Fresh, crisp apples from a local orchard",
+    farm: "Green Acres Farm",
     price: 40.00,
     unit: "kg",
     availability: "In Stock",
@@ -14,7 +15,8 @@ const products = [
   {
     id: 2,
     name: "Potatoes",
-    category: "Vegetables",
+    description: "High-quality potatoes perfect for cooking and frying",
+    farm: "Sunny Valley Farms",
     price: 30.00,
     unit: "kg",
     availability: "Out of Stock",
@@ -23,7 +25,8 @@ const products = [
   {
     id: 3,
     name: "Apples",
-    category: "Fruits",
+    description: "Juicy and sweet apples from premium orchards",
+    farm: "Orchard Grove",
     price: 120.00,
     unit: "kg",
     availability: "In Stock",
@@ -32,7 +35,8 @@ const products = [
   {
     id: 4,
     name: "Bananas",
-    category: "Fruits",
+    description: "Ripe and fresh bananas sourced from local farms",
+    farm: "Tropical Farms",
     price: 60.00,
     unit: "dozen",
     availability: "In Stock",
@@ -41,7 +45,8 @@ const products = [
   {
     id: 5,
     name: "Milk",
-    category: "Dairy",
+    description: "Pure and fresh milk from grass-fed cows and buffaloo",
+    farm: "Dairyland Farms",
     price: 50.00,
     unit: "litre",
     availability: "In Stock",
@@ -50,16 +55,18 @@ const products = [
   {
     id: 6,
     name: "Eggs",
-    category: "Dairy",
+    description: "Free-range eggs from pasture-raised chickens",
+    farm: "Cluckingham Palace",
     price: 70.00,
     unit: "dozen",
-    availability: "Limited Stock",
+    availability: "Limited",
     image: "/products.png"
   },
   {
     id: 7,
     name: "Wheat Flour",
-    category: "Grains",
+    description: "Stone-ground wheat flour for all your baking needs",
+    farm: "Golden Fields Farm",
     price: 40.00,
     unit: "kg",
     availability: "In Stock",
@@ -68,24 +75,27 @@ const products = [
   {
     id: 8,
     name: "Rice",
-    category: "Grains",
+    description: "Premium quality rice for everyday cooking",
+    farm: "Rice Bowl Valley",
     price: 60.00,
     unit: "kg",
     availability: "Out of Stock",
     image: "/products.png"
   }
-]
+];
+
 
 
 
 function ProductsCards() {
   return (
-    <ul className="productList">
+    <ul className="products-grid">
     {products.map((product) => <Product
         key={product.id}
         name={product.name}
         price={product.price}
-        category={product.category}
+        description={product.description}
+        farm={product.farm}
         unit={product.unit}
         imgUrl={product.image}
         stock={product.availability}

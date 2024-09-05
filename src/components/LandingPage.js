@@ -5,69 +5,39 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <header className="header">
-        <a className="logo" href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="icon"
-          >
-            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
-            <path d="M9 22v-4h6v4"></path>
-            <path d="M8 6h.01"></path>
-            <path d="M16 6h.01"></path>
-            <path d="M12 6h.01"></path>
-            <path d="M12 10h.01"></path>
-            <path d="M12 14h.01"></path>
-            <path d="M16 10h.01"></path>
-            <path d="M16 14h.01"></path>
-            <path d="M8 10h.01"></path>
-            <path d="M8 14h.01"></path>
-          </svg>
-          <span className="sr-only">Farmr</span>
+        <a className="logo" href="#"><span className='agro'>Agro</span>Bond
         </a>
         <nav className="nav">
-          <a className="nav-link" href="#">
-            Features
-          </a>
-          <a className="nav-link" href="#">
-            Testimonials
-          </a>
-          <a className="nav-link" href="#">
-            Pricing
-          </a>
-          <a className="nav-link" href="#">
-            Contact
-          </a>
+          <button className='btn-primary'>Sign Up</button>
         </nav>
       </header>
 
       <main className="main">
-        <section className="hero-section">
-          <div className="hero-content">
-            <div className="text-center">
-              <h1 className="hero-title">Connect Farmers with Buyers</h1>
-              <p className="hero-subtitle">
-                Farmr is the premier platform for connecting local farmers with buyers who want fresh, high-quality
-                produce. Streamline your supply chain and support your community.
+      <section className="landing-section">
+      <h1 className="landing-title">Connect with Local Farmers, Easily</h1>
+      <div className="landing-container">
+        <div className="landing-grid">
+        <img
+            src="/landingPage.png"
+            alt="Hero"
+            width="550"
+            height="550"
+            className="landing-image"
+          />
+          <div className="landing-content">
+            <div className="landing-header">
+              <p className="landing-subtitle">
+              AgroBond is the premier platform for connecting local farmers with buyers who want fresh, high-quality produce. Streamline your supply chain and support your community by sourcing the best local produce available.
               </p>
             </div>
-            <div className="cta-buttons">
-              <a href="#" className="btn-primary">
-                Sign Up
-              </a>
-              <a href="#" className="btn-secondary">
-                Learn More
-              </a>
+            <div className="landing-buttons">
+              <button className='btn-primary'>Sign Up</button>
+              <button className='btn-secondary'>Contact Us</button>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
         <section className="features-section">
           <div className="features-grid">
@@ -201,7 +171,7 @@ const LandingPage = () => {
       </main>
 
       <footer className="footer">
-        <p className="footer-text">© 2023 Farmr. All rights reserved.</p>
+        <p className="footer-text">© 2023 AgroBond. All rights reserved.</p>
       </footer>
     </div>
   );
