@@ -1,8 +1,0 @@
-.farmerList {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 20px; /* Space between the cards */
-    margin: 0 auto; /* Center the container */
-    max-width: 1200px; /* Optional: set a max width for the container */
-    padding: 20px;
-}
