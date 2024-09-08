@@ -1,13 +1,9 @@
-// import FarmerCards from "./components/Buyer/FarmerCards";
-import Buyer from "./components/Buyer/Buyer";
-// import ProductsCards from "./components/Buyer/ProductsCards";
-
-import LandingPage from "./components/LandingPage";
+import LandingPage from './pages/LandingPage'
 
 function App() {
   return (
     <div>
-      HI
+      <LandingPage />
     </div>
   );
 }
