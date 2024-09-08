@@ -1,9 +1,10 @@
-import LandingPage from './pages/LandingPage'
+import FarmerLogin from "./pages/SignUp.js/FarmerLogin";
+
 
 function App() {
   return (
     <div>
-      <LandingPage />
+      <FarmerLogin />
     </div>
   );
 }

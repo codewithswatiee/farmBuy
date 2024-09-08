@@ -15,7 +15,7 @@ export default function MainNav() {
           Contact
         </a>
         <button className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md text-md font-medium">
-          Login/Signup
+          SignUp
         </button>
         <button
             className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-md font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
@@ -38,7 +38,7 @@ export default function MainNav() {
               Contact
             </a>
             <button className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-sm text-sm font-medium">
-              Login/Signup
+              Signup
             </button>
             <button className="bg-primaryForeground text-black hover:bg-primary/90 px-4 py-2 rounded-sm text-sm font-medium">
               Language
