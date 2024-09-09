@@ -1,10 +1,11 @@
-import FarmerLogin from "./pages/SignUp.js/FarmerLogin";
+import Buyer from "./pages/Buyer";
+
 
 
 function App() {
-  return (
+    return (
     <div>
-      <FarmerLogin />
+      <Buyer />
     </div>
   );
 }
